@@ -8,6 +8,9 @@ from backend.app.core.database import Base, engine
 from backend.app.routes.vendors import router as vendors_router
 from backend.app.routes.assessments import router as assessments_router
 from backend.app.routes.mfg006_ml import router as mfg006_ml_router
+from backend.app.routes.documents import router as documents_router
+from backend.app.routes.rag import router as rag_router
+from backend.app.routes.ai_assessments import router as ai_assessments_router
 
 # Create database tables on startup
 Base.metadata.create_all(bind=engine)
@@ -44,6 +47,9 @@ def root():
 app.include_router(vendors_router)
 app.include_router(assessments_router)
 app.include_router(mfg006_ml_router)
+app.include_router(documents_router)
+app.include_router(rag_router)
+app.include_router(ai_assessments_router)
 
 
 if __name__ == "__main__":

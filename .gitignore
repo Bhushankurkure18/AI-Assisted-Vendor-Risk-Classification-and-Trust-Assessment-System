@@ -26,3 +26,11 @@ chroma_db/
 
 # External IDE configuration
 zapp.yaml
+
+# Uploaded documents storage
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Frontend build & dependencies
+frontend/node_modules/
+frontend/dist/

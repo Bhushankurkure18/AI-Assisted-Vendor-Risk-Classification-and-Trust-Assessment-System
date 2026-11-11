@@ -22,3 +22,6 @@ class Vendor(Base):
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
 
     assessments = relationship("Assessment", back_populates="vendor", cascade="all, delete-orphan")
+    documents = relationship("Document", back_populates="vendor", cascade="all, delete-orphan")
+    chunks = relationship("DocumentChunk", back_populates="vendor", cascade="all, delete-orphan")
+    ai_assessments = relationship("AIAssessment", back_populates="vendor", cascade="all, delete-orphan")

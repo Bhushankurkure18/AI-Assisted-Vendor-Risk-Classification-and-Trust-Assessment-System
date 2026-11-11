@@ -28,6 +28,17 @@ class Settings(BaseSettings):
     THRESHOLD_LOW_MAX: float = 39.0
     THRESHOLD_MEDIUM_MAX: float = 69.0
 
+    # Phase 2: Document Ingestion, Processing & Vector Storage
+    MAX_UPLOAD_SIZE_BYTES: int = 25 * 1024 * 1024  # 25 MB
+    UPLOAD_DIR: str = "data/uploads"
+    CHROMA_PERSIST_DIRECTORY: str = "./chroma_db"
+    TESSERACT_CMD: Optional[str] = None
+    SUPPORTED_EXTENSIONS: list[str] = [".pdf", ".docx", ".txt", ".csv"]
+
+    # Phase 2: Chunking Configuration
+    CHUNK_SIZE_TOKENS: int = 800
+    CHUNK_OVERLAP_TOKENS: int = 150
+
     class Config:
         env_file = ".env"
         extra = "ignore"

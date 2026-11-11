@@ -17,4 +17,27 @@ __all__ = [
     "CombinedAssessmentResponse",
     "RuleBasedAssessmentResult",
     "MLAssessmentResult",
+    "DocumentUploadResponse",
+    "DocumentDetailResponse",
+    "DocumentListResponse",
+    "DocumentProcessResponse",
+    "DocumentPageExtract",
+    "ChunkMetadata",
+    "ChunkResponse",
+    "ChunkListResponse",
+    "ChunkProcessResponse",
 ]
+
+from backend.app.schemas.document import (
+    DocumentUploadResponse,
+    DocumentDetailResponse,
+    DocumentListResponse,
+    DocumentProcessResponse,
+    DocumentPageExtract,
+)
+from backend.app.schemas.chunk import (
+    ChunkMetadata,
+    ChunkResponse,
+    ChunkListResponse,
+    ChunkProcessResponse,
+)
