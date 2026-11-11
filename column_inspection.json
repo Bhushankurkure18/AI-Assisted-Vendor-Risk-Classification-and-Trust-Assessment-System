@@ -1,0 +1,1445 @@
+[
+  {
+    "index": 0,
+    "column": "event_id",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 3000,
+    "samples": [
+      "SCE-2015-00001",
+      "SCE-2015-00002",
+      "SCE-2015-00003"
+    ]
+  },
+  {
+    "index": 1,
+    "column": "company_id",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 30,
+    "samples": [
+      "MFG-CO-007",
+      "MFG-CO-001",
+      "MFG-CO-028"
+    ]
+  },
+  {
+    "index": 2,
+    "column": "plant_id",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 90,
+    "samples": [
+      "PLT-054",
+      "PLT-074",
+      "PLT-020"
+    ]
+  },
+  {
+    "index": 3,
+    "column": "industry_sector",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 10,
+    "samples": [
+      "electronics",
+      "industrial",
+      "automotive"
+    ]
+  },
+  {
+    "index": 4,
+    "column": "event_detection_date",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2017,
+    "samples": [
+      "2022-10-08",
+      "2016-11-09",
+      "2020-03-06"
+    ]
+  },
+  {
+    "index": 5,
+    "column": "event_start_date",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2051,
+    "samples": [
+      "2022-10-06",
+      "2016-11-02",
+      "2020-03-02"
+    ]
+  },
+  {
+    "index": 6,
+    "column": "event_resolution_date",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2046,
+    "samples": [
+      "2022-11-06",
+      "2016-11-21",
+      "2020-03-07"
+    ]
+  },
+  {
+    "index": 7,
+    "column": "event_duration_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 200,
+    "samples": [
+      31,
+      19,
+      5
+    ]
+  },
+  {
+    "index": 8,
+    "column": "detection_lag_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 49,
+    "samples": [
+      2,
+      7,
+      4
+    ]
+  },
+  {
+    "index": 9,
+    "column": "disruption_category",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 10,
+    "samples": [
+      "cyber_attack",
+      "quality_recall",
+      "supplier_failure"
+    ]
+  },
+  {
+    "index": 10,
+    "column": "disruption_subcategory",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 17,
+    "samples": [
+      "data_breach",
+      "quality_failure",
+      "seasonal_amplification"
+    ]
+  },
+  {
+    "index": 11,
+    "column": "severity_level",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 4,
+    "samples": [
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  {
+    "index": 12,
+    "column": "severity_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 789,
+    "samples": [
+      6.25,
+      4.64,
+      1.96
+    ]
+  },
+  {
+    "index": 13,
+    "column": "affected_region",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 10,
+    "samples": [
+      "Northeast_Asia",
+      "South_Asia",
+      "Western_Europe"
+    ]
+  },
+  {
+    "index": 14,
+    "column": "affected_country",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 32,
+    "samples": [
+      "JP",
+      "BD",
+      "FR"
+    ]
+  },
+  {
+    "index": 15,
+    "column": "supplier_id",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 1905,
+    "samples": [
+      "SUP-1819",
+      "SUP-2015",
+      "SUP-2392"
+    ]
+  },
+  {
+    "index": 16,
+    "column": "supplier_name_synthetic",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2848,
+    "samples": [
+      "Meridian Parts Co 1819",
+      "AlphaLink Supply 2015",
+      "NovaPlas Group 2392"
+    ]
+  },
+  {
+    "index": 17,
+    "column": "supplier_tier",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 4,
+    "samples": [
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "index": 18,
+    "column": "supplier_criticality",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 5,
+    "samples": [
+      "preferred",
+      "conditional",
+      "strategic_partner"
+    ]
+  },
+  {
+    "index": 19,
+    "column": "supplier_country",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 32,
+    "samples": [
+      "JP",
+      "BD",
+      "FR"
+    ]
+  },
+  {
+    "index": 20,
+    "column": "supplier_geographic_risk_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 691,
+    "samples": [
+      2.96,
+      6.14,
+      2.16
+    ]
+  },
+  {
+    "index": 21,
+    "column": "number_of_alternative_suppliers",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 8,
+    "samples": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "index": 22,
+    "column": "supplier_concentration_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 676,
+    "samples": [
+      80.1,
+      64.5,
+      61.5
+    ]
+  },
+  {
+    "index": 23,
+    "column": "affected_sku_count",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 149,
+    "samples": [
+      74,
+      12,
+      22
+    ]
+  },
+  {
+    "index": 24,
+    "column": "affected_component_category",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 9,
+    "samples": [
+      "energy",
+      "packaging",
+      "IT_service"
+    ]
+  },
+  {
+    "index": 25,
+    "column": "supplier_financial_health_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 625,
+    "samples": [
+      7.19,
+      8.41,
+      3.48
+    ]
+  },
+  {
+    "index": 26,
+    "column": "supplier_audit_score_last",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 533,
+    "samples": [
+      57.6,
+      28.7,
+      88.9
+    ]
+  },
+  {
+    "index": 27,
+    "column": "months_since_last_audit",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 47,
+    "samples": [
+      17,
+      31,
+      24
+    ]
+  },
+  {
+    "index": 28,
+    "column": "supplier_relationship_years",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 285,
+    "samples": [
+      7.9,
+      2.1,
+      5.3
+    ]
+  },
+  {
+    "index": 29,
+    "column": "dual_source_in_place",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 30,
+    "column": "supply_volume_impact_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 819,
+    "samples": [
+      45.2,
+      26.3,
+      38.3
+    ]
+  },
+  {
+    "index": 31,
+    "column": "supply_volume_at_risk_units",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2996,
+    "samples": [
+      883284,
+      444903,
+      940169
+    ]
+  },
+  {
+    "index": 32,
+    "column": "revenue_at_risk_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 3000,
+    "samples": [
+      15505951.0,
+      602189.0,
+      674376.0
+    ]
+  },
+  {
+    "index": 33,
+    "column": "actual_revenue_loss_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2981,
+    "samples": [
+      3252032.0,
+      69179.0,
+      158278.0
+    ]
+  },
+  {
+    "index": 34,
+    "column": "ebitda_impact_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2992,
+    "samples": [
+      1309080.0,
+      24604.0,
+      89080.0
+    ]
+  },
+  {
+    "index": 35,
+    "column": "stockout_occurred",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 36,
+    "column": "stockout_duration_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 125,
+    "samples": [
+      0,
+      12,
+      35
+    ]
+  },
+  {
+    "index": 37,
+    "column": "production_lines_halted",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 10,
+    "samples": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "index": 38,
+    "column": "production_lines_throttled",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 20,
+    "samples": [
+      2,
+      7,
+      0
+    ]
+  },
+  {
+    "index": 39,
+    "column": "throughput_loss_units",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2977,
+    "samples": [
+      78945,
+      33837,
+      125204
+    ]
+  },
+  {
+    "index": 40,
+    "column": "throughput_loss_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 629,
+    "samples": [
+      29.4,
+      16.3,
+      30.8
+    ]
+  },
+  {
+    "index": 41,
+    "column": "demand_fulfilled_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 512,
+    "samples": [
+      76.5,
+      87.0,
+      75.4
+    ]
+  },
+  {
+    "index": 42,
+    "column": "customer_order_backlog_units",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2851,
+    "samples": [
+      20952,
+      4559,
+      22136
+    ]
+  },
+  {
+    "index": 43,
+    "column": "expediting_cost_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2964,
+    "samples": [
+      439035.0,
+      3505.0,
+      7302.0
+    ]
+  },
+  {
+    "index": 44,
+    "column": "cost_of_disruption_total_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2996,
+    "samples": [
+      3952883.0,
+      77605.0,
+      183396.0
+    ]
+  },
+  {
+    "index": 45,
+    "column": "inventory_buffer_days_at_onset",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 687,
+    "samples": [
+      12.6,
+      15.2,
+      20.6
+    ]
+  },
+  {
+    "index": 46,
+    "column": "inventory_depletion_date",
+    "dtype": "str",
+    "missing": 2437,
+    "missing_pct": 81.23,
+    "nunique": 529,
+    "samples": [
+      "2015-07-09",
+      "2018-02-27",
+      "2019-05-10"
+    ]
+  },
+  {
+    "index": 47,
+    "column": "normal_lead_time_days",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 1069,
+    "samples": [
+      85.6,
+      51.5,
+      111.1
+    ]
+  },
+  {
+    "index": 48,
+    "column": "disrupted_lead_time_days",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 1466,
+    "samples": [
+      128.8,
+      68.1,
+      128.2
+    ]
+  },
+  {
+    "index": 49,
+    "column": "lead_time_extension_days",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 735,
+    "samples": [
+      43.2,
+      16.6,
+      17.1
+    ]
+  },
+  {
+    "index": 50,
+    "column": "lead_time_extension_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 898,
+    "samples": [
+      50.5,
+      32.3,
+      15.4
+    ]
+  },
+  {
+    "index": 51,
+    "column": "logistics_mode_primary",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 7,
+    "samples": [
+      "ocean_freight",
+      "air_freight",
+      "road"
+    ]
+  },
+  {
+    "index": 52,
+    "column": "logistics_mode_disrupted",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      1,
+      0
+    ]
+  },
+  {
+    "index": 53,
+    "column": "port_of_entry_congestion_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 54,
+    "column": "customs_clearance_delay_days",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 238,
+    "samples": [
+      3.4,
+      1.8,
+      4.8
+    ]
+  },
+  {
+    "index": 55,
+    "column": "carrier_failure_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 56,
+    "column": "freight_cost_normal_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2908,
+    "samples": [
+      15771.0,
+      43755.0,
+      8457.0
+    ]
+  },
+  {
+    "index": 57,
+    "column": "freight_cost_disrupted_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2956,
+    "samples": [
+      104028.0,
+      47666.0,
+      8730.0
+    ]
+  },
+  {
+    "index": 58,
+    "column": "freight_cost_premium_usd",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2775,
+    "samples": [
+      88257.0,
+      3911.0,
+      273.0
+    ]
+  },
+  {
+    "index": 59,
+    "column": "logistics_concentration_risk",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 4,
+    "samples": [
+      "own_fleet",
+      "single_carrier",
+      "dual_carrier"
+    ]
+  },
+  {
+    "index": 60,
+    "column": "nearshoring_available",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 61,
+    "column": "demand_shock_type",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 4,
+    "samples": [
+      "no_demand_shock",
+      "demand_crash",
+      "demand_volatility"
+    ]
+  },
+  {
+    "index": 62,
+    "column": "demand_shock_trigger",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 7,
+    "samples": [
+      "none",
+      "seasonal_amplification",
+      "macro_economic"
+    ]
+  },
+  {
+    "index": 63,
+    "column": "demand_spike_magnitude_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 439,
+    "samples": [
+      0.0,
+      15.4,
+      24.8
+    ]
+  },
+  {
+    "index": 64,
+    "column": "demand_crash_magnitude_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 170,
+    "samples": [
+      0.0,
+      45.0,
+      28.0
+    ]
+  },
+  {
+    "index": 65,
+    "column": "demand_volatility_index",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 451,
+    "samples": [
+      16.7,
+      32.7,
+      18.9
+    ]
+  },
+  {
+    "index": 66,
+    "column": "demand_forecast_error_mape",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 1258,
+    "samples": [
+      57.0,
+      72.2,
+      120.3
+    ]
+  },
+  {
+    "index": 67,
+    "column": "order_variability_bullwhip_ratio",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 368,
+    "samples": [
+      4.03,
+      2.03,
+      1.5
+    ]
+  },
+  {
+    "index": 68,
+    "column": "customer_concentration_top3_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 501,
+    "samples": [
+      21.2,
+      67.8,
+      51.1
+    ]
+  },
+  {
+    "index": 69,
+    "column": "channel_shift_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 70,
+    "column": "safety_stock_adequacy",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 4,
+    "samples": [
+      "adequate",
+      "insufficient",
+      "critical"
+    ]
+  },
+  {
+    "index": 71,
+    "column": "mitigation_strategy_primary",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 12,
+    "samples": [
+      "inventory_build",
+      "demand_shaping",
+      "product_substitution"
+    ]
+  },
+  {
+    "index": 72,
+    "column": "mitigation_strategy_secondary",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 13,
+    "samples": [
+      "nothing",
+      "nearshoring",
+      "inventory_build"
+    ]
+  },
+  {
+    "index": 73,
+    "column": "mitigation_activation_lag_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 21,
+    "samples": [
+      14,
+      6,
+      17
+    ]
+  },
+  {
+    "index": 74,
+    "column": "mitigation_effectiveness_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 592,
+    "samples": [
+      4.2,
+      4.54,
+      2.34
+    ]
+  },
+  {
+    "index": 75,
+    "column": "spot_buy_activated",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 76,
+    "column": "spot_buy_volume_units",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 568,
+    "samples": [
+      0,
+      9852,
+      46452
+    ]
+  },
+  {
+    "index": 77,
+    "column": "spot_buy_premium_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 521,
+    "samples": [
+      0.0,
+      165.5,
+      96.2
+    ]
+  },
+  {
+    "index": 78,
+    "column": "alternative_supplier_onboarded",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 79,
+    "column": "onboarding_time_days",
+    "dtype": "float64",
+    "missing": 2951,
+    "missing_pct": 98.37,
+    "nunique": 40,
+    "samples": [
+      30.0,
+      152.0,
+      153.0
+    ]
+  },
+  {
+    "index": 80,
+    "column": "customer_allocation_applied",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 81,
+    "column": "demand_shaping_discount_pct",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 178,
+    "samples": [
+      0.0,
+      6.3,
+      22.2
+    ]
+  },
+  {
+    "index": 82,
+    "column": "safety_stock_policy_changed",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      1,
+      0
+    ]
+  },
+  {
+    "index": 83,
+    "column": "new_safety_stock_days",
+    "dtype": "float64",
+    "missing": 2693,
+    "missing_pct": 89.77,
+    "nunique": 237,
+    "samples": [
+      57.1,
+      34.9,
+      76.7
+    ]
+  },
+  {
+    "index": 84,
+    "column": "resilience_investment_triggered",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      1,
+      0
+    ]
+  },
+  {
+    "index": 85,
+    "column": "resilience_investment_usd",
+    "dtype": "float64",
+    "missing": 2684,
+    "missing_pct": 89.47,
+    "nunique": 316,
+    "samples": [
+      4304868.0,
+      3196699.0,
+      3920273.0
+    ]
+  },
+  {
+    "index": 86,
+    "column": "recovery_trajectory",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 5,
+    "samples": [
+      "u_shaped",
+      "v_shaped",
+      "w_shaped"
+    ]
+  },
+  {
+    "index": 87,
+    "column": "time_to_50pct_recovery_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 177,
+    "samples": [
+      23,
+      6,
+      1
+    ]
+  },
+  {
+    "index": 88,
+    "column": "time_to_full_recovery_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 253,
+    "samples": [
+      46,
+      10,
+      2
+    ]
+  },
+  {
+    "index": 89,
+    "column": "early_warning_signal_detected",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 90,
+    "column": "early_warning_source",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 6,
+    "samples": [
+      "none",
+      "supplier_financial_monitoring",
+      "weather_forecast"
+    ]
+  },
+  {
+    "index": 91,
+    "column": "early_warning_lead_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 56,
+    "samples": [
+      0,
+      1,
+      26
+    ]
+  },
+  {
+    "index": 92,
+    "column": "supply_chain_visibility_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 658,
+    "samples": [
+      3.62,
+      4.56,
+      2.77
+    ]
+  },
+  {
+    "index": 93,
+    "column": "digital_twin_available",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 94,
+    "column": "erp_alert_triggered",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 95,
+    "column": "external_data_feed_active",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 96,
+    "column": "tier2_visibility_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 97,
+    "column": "bcp_activated",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 98,
+    "column": "crisis_team_convened",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 99,
+    "column": "war_room_duration_days",
+    "dtype": "int64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 47,
+    "samples": [
+      0,
+      6,
+      37
+    ]
+  },
+  {
+    "index": 100,
+    "column": "insurance_claim_filed",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      1,
+      0
+    ]
+  },
+  {
+    "index": 101,
+    "column": "insurance_payout_usd",
+    "dtype": "float64",
+    "missing": 2825,
+    "missing_pct": 94.17,
+    "nunique": 175,
+    "samples": [
+      94462.0,
+      809643.0,
+      1532094.0
+    ]
+  },
+  {
+    "index": 102,
+    "column": "supply_chain_maturity_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 387,
+    "samples": [
+      2.4,
+      2.82,
+      1.53
+    ]
+  },
+  {
+    "index": 103,
+    "column": "resilience_posture_pre_event",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 5,
+    "samples": [
+      "compliant",
+      "aware",
+      "proactive"
+    ]
+  },
+  {
+    "index": 104,
+    "column": "resilience_posture_post_event",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 5,
+    "samples": [
+      "proactive",
+      "compliant",
+      "aware"
+    ]
+  },
+  {
+    "index": 105,
+    "column": "root_cause_category",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 9,
+    "samples": [
+      "process_failure",
+      "logistics_fragility",
+      "poor_supplier_financial_health"
+    ]
+  },
+  {
+    "index": 106,
+    "column": "preventability_score",
+    "dtype": "float64",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 645,
+    "samples": [
+      6.08,
+      5.99,
+      4.19
+    ]
+  },
+  {
+    "index": 107,
+    "column": "repeat_event_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 108,
+    "column": "post_event_supplier_status",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 5,
+    "samples": [
+      "dual_sourced",
+      "under_review",
+      "retained"
+    ]
+  },
+  {
+    "index": 109,
+    "column": "near_miss_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 110,
+    "column": "lessons_learned_documented",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      1,
+      0
+    ]
+  },
+  {
+    "index": 111,
+    "column": "industry_event_flag",
+    "dtype": "bool",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 2,
+    "samples": [
+      0,
+      1
+    ]
+  },
+  {
+    "index": 112,
+    "column": "sku",
+    "dtype": "str",
+    "missing": 0,
+    "missing_pct": 0.0,
+    "nunique": 1,
+    "samples": [
+      "MFG-006"
+    ]
+  }
+]

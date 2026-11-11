@@ -7,6 +7,7 @@ from backend.app.core.config import settings
 from backend.app.core.database import Base, engine
 from backend.app.routes.vendors import router as vendors_router
 from backend.app.routes.assessments import router as assessments_router
+from backend.app.routes.mfg006_ml import router as mfg006_ml_router
 
 # Create database tables on startup
 Base.metadata.create_all(bind=engine)
@@ -42,6 +43,7 @@ def root():
 # Include modular routers
 app.include_router(vendors_router)
 app.include_router(assessments_router)
+app.include_router(mfg006_ml_router)
 
 
 if __name__ == "__main__":
